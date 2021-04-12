@@ -32,7 +32,7 @@
             {% assign url = '/' %}
           {% endif %}
           <a href="{{ url | relative_url }}">
-            {{ item | capitalize }}
+            {{ site.data.topbar.path[item] | item | capitalize }}
           </a>
         </span>
 
