@@ -11,7 +11,7 @@
   {% if update_list.size > 0 %}
 
     <div id="access-lastmod" class="post">
-      <span>{{- site.data.label.panel.lastmod | default: 'Recent Update' -}}</span>
+      <span>{{- site.data.label.panel.lastmod | default: '最近更新' -}}</span>
       <ul class="post-content pl-0 pb-1 ml-1 mt-2">
 
       {% for item in update_list %}
@@ -30,12 +30,12 @@
 
   {% if trending_tags.size > 0 %}
     <div id="access-tags">
-      <span>{{- site.data.label.panel.trending_tags | default: 'Trending Tags' -}}</span>
+      <span>{{- site.data.label.panel.trending_tags | default: '相关标签' -}}</span>
       <div class="d-flex flex-wrap mt-3 mb-1 mr-3">
 
       {% for tag_name in trending_tags %}
         {% assign url = tag_name | slugify | url_encode | prepend: "/tags/" | append: "/" %}
-        <a class="post-tag" href="{{ url | relative_url }}">{{ tag_name }}</a>
+        <a class="post-tag" href="{{ url | relative_url }}">{{ tag_name }} ( {{site.tags[tag_name].size }})</a>
       {% endfor %}
 
       </div>
