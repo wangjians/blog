@@ -51,10 +51,10 @@ layout: page
         <span class="text-muted small font-weight-light">
           {% if sub_categories_size > 0 %}
             {{ sub_categories_size }}
-            {% if sub_categories_size > 1 %}类别{% else %}类别{% endif %},
+            {% if sub_categories_size > 1 %}个类别{% else %}个类别{% endif %},
           {% endif %}
             {{ top_posts_size }}
-            文章{% if top_posts_size > 1 %}{% endif %}
+            篇文章{% if top_posts_size > 1 %}{% endif %}
         </span>
       </span>
 
@@ -84,7 +84,7 @@ layout: page
             class="ml-1 mr-2">{{ sub_category }}</a>
           {% assign posts_size = site.categories[sub_category] | size %}
           <span class="text-muted small font-weight-light">{{ posts_size }}
-            post{% if posts_size > 1 %}s{% endif %}
+            篇文章{% if posts_size > 1 %}{% endif %}
           </span>
         </li>
         {% endfor %}
