@@ -17,7 +17,7 @@ timezone: Asia/Shanghai
 # --------------------------
 title: 汪健的网络博客                         # the main title
 
-tagline: 网络博客  # it will display as the sub-title
+tagline: 说代码的人  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
  说代码的人
