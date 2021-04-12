@@ -10,7 +10,7 @@
 
     {% if paths.size == 0 %}
       <!-- index page -->
-      <span>{{ 'Posts' }}</span>
+      <span>{{ '文章' }}</span>
     {% else %}
 
       {% for item in paths %}
@@ -18,7 +18,7 @@
         {% if forloop.first %}
           {% unless page.layout == 'post' %}
           <span>
-            <a href="{{ '/' | relative_url }}">{{ 'Home' }}</a>
+            <a href="{{ '/' | relative_url }}">{{ '主页' }}</a>
           </span>
           {% endunless %}
 
@@ -60,10 +60,10 @@
     <span id="search-wrapper" class="align-items-center">
       <i class="fas fa-search fa-fw"></i>
       <input class="form-control" id="search-input" type="search"
-        aria-label="search" placeholder="{{ site.data.label.search_hint | default: 'Search' }}...">
+        aria-label="search" placeholder="{{ site.data.label.search_hint | default: '搜索' }}...">
       <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
     </span>
-    <span id="search-cancel" >Cancel</span>
+    <span id="search-cancel" >取消</span>
   </div>
 
 </div>
