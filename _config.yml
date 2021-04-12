@@ -167,3 +167,10 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+    
+data:
+  label:
+    post:
+      button:
+        previous : 前一篇
+        next: 后一篇
