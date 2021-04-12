@@ -35,7 +35,7 @@
 
       {% for tag_name in trending_tags %}
         {% assign url = tag_name | slugify | url_encode | prepend: "/tags/" | append: "/" %}
-        <a class="post-tag" href="{{ url | relative_url }}">{{ tag_name }} ( {{site.tags[tag_name].size }})</a>
+        <a class="post-tag" href="{{ url | relative_url }}">{{ tag_name }}({{site.tags[tag_name].size}})</a>
       {% endfor %}
 
       </div>
