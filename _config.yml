@@ -20,7 +20,7 @@ title: 汪健的网络博客                         # the main title
 tagline: 网络博客  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  网络博客
+ 说代码的人
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://wangjians.github.io'
@@ -44,7 +44,7 @@ social:
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification: google_meta_tag_verification # change to your verification string
+google_site_verification: # change to your verification string
 # --------------------------
 
 google_analytics:
