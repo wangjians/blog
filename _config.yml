@@ -174,8 +174,13 @@ data:
       button:
         previous : 前一篇
         next: 后一篇
+      relate_posts: 关联文章
+      share: 分享
   topbar:
     path:
       posts: 文章
       categories: 类别
       tags: 标签
+  
+  
+
